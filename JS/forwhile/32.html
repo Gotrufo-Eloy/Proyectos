@@ -1,0 +1,30 @@
+<script>
+
+    let numba = Number(prompt("Numba"))
+    
+    for (i=0;i<numba;i++){
+        var line = ""
+        if (i%2==0){
+            for (j=0;j<numba;j++){
+                if (j%2 ==0) {
+                    line += "x"
+                } else {
+                    line += "-"
+                }
+            }
+            console.log(line)
+        } else  {
+            for (j=0;j<numba;j++){
+                if (j%2 ==0) {
+                    line += "-"
+                } else {
+                    line += "x"
+                }
+            }
+            console.log(line)
+        }
+    }
+    
+    
+    
+    </script>
