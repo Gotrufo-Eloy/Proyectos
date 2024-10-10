@@ -2,28 +2,30 @@
 
     let numba = Number(prompt("Numba"))
     let primo = true
-        for (i=2;i<numba&&primo;i++){
-            if (numba%i == 0) {
-                primo = false
-            } 
+    for (i=2;i<numba&&primo;i++){
+        if (numba%i == 0) {
+            primo = false
         } 
-   let newnumba = numba  
-   let nextprimo=false
+    } 
+   
+   let next = numba
+   let nextprimo = false
     if (primo == false){
-        if (nextprimo==false){
-            let nextprimo=true
-            newnumba = newnumba+1
-            for (i=2;i<newnumba&&nextprimo;i++){
-                if (nextprimo%i == 0) {
+        console.log(numba + " No Es primo")
+        while(!nextprimo){
+            nextprimo=true
+            for (i=2;i<next&&nextprimo;i++){
+                if (next%i == 0) {
                     nextprimo = false
                 } 
-            } 
-        } else {
-            console.log("NO primo but este si :" + newnumba)
+            }
+            if (!nextprimo){
+                next= next+1
+            }
         }
-        
-    } else {
+        console.log("El siguiente número primo es " + next + ".");
+    }  else {
         console.log(" Es primo")
     }
     
-    </script>
+</script>
