@@ -1,0 +1,17 @@
+<script>
+    let palabrainicial = Number(prompt("Dime un numero"))
+    let palabra = Number(prompt("Dime otro numero"))
+
+    while (palabra != palabrainicial) {
+        if (palabra>palabrainicial){
+        palabra = prompt("Introduce un numero MENOR:")
+      }
+      if (palabra<palabrainicial){
+        palabra = prompt("Introduce un numero MAYOR:")
+      }
+      
+      if (palabra !== palabrainicial){
+        console.log("Correcto")
+      }
+    }
+</script>
