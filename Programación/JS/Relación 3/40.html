@@ -1,0 +1,19 @@
+<script>
+    let numero = (prompt("Hola"))
+    let array = numero.split('')
+    let iterations = array.length
+    console.log(iterations)
+    let suma = Number(0)
+    numba = Number(numero)
+
+    for (i=0;i<iterations;i++){
+        let asdf = Number(0)
+        asdf = parseInt(numba/Math.pow(10,(iterations-i-1)))
+        numba = numba - (Math.pow(10,(iterations-i-1)))*asdf
+        console.log("Power"+Math.pow(10,(iterations-i-1)))
+        console.log("Asdf"+i+" "+asdf)
+        console.log("Numba"+numba)
+        suma = (suma+asdf)
+    }
+    console.log(suma)
+</script>
