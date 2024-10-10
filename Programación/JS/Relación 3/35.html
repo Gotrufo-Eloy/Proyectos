@@ -7,20 +7,18 @@
                 primo = false
             } 
         } 
-   let newnumba = numba   
+   let newnumba = numba  
+   let nextprimo = true 
     if (primo == false){
-        let nextprimo = true
-        for (i=newnumba;nextprimo==true;i++){
-            newnumba = newnumba+1
+        for (newnumba;nextprimo;newnumba++){
             for (i=2;i<newnumba&&nextprimo;i++){
-                if (newnumba%i == 0) {
+                if (newnumba%i==0){
                     nextprimo = false
                     console.log("NO primo but este si :" + newnumba)
-                } 
-            } 
-
+                }
+            }
         }
-        console.log("NO primo but este si :" + numba)
+        console.log("NO primo but este si :" + newnumba)
     } else {
         console.log(" Es primo")
     }
