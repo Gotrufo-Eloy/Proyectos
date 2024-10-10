@@ -12,7 +12,7 @@
         let nextprimo = true
         for (i=newnumba;nextprimo==true;i++){
             newnumba = newnumba+1
-            for (i=2;i<newnumba;i++){
+            for (i=2;i<newnumba&&nextprimo;i++){
                 if (newnumba%i == 0) {
                     nextprimo = false
                     console.log("NO primo but este si :" + newnumba)
