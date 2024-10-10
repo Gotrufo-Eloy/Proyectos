@@ -1,16 +1,34 @@
 <script>
     let numero = (prompt("Hola"))
-    let array = numero.split('')
-    let iterations = array.length
     console.log(iterations)
     let suma = Number(0)
     numba = Number(numero)
-
+    let contador = Number(numero)*10
+    let iterations2 = 0
+    //Version Isaac
+    for (j=1;contador>=10;j++){
+        contador = contador/10
+        console.log("Contador "+j+" "+contador)
+        iterations2=j
+    }
+    
     for (i=0;i<iterations;i++){
         let asdf = Number(0)
         asdf = parseInt(numba/Math.pow(10,(iterations-i-1)))
         numba = numba - (Math.pow(10,(iterations-i-1)))*asdf
         suma = (suma+asdf)
     }
-    console.log("La suma de los digitos es: "+suma)
+    console.log(suma)
+    
+    /*Version Gotrufo con array
+    let array = numero.split('')
+    let iterations = array.length
+    for (i=0;i<iterations;i++){
+        let asdf = Number(0)
+        asdf = parseInt(numba/Math.pow(10,(iterations-i-1)))
+        numba = numba - (Math.pow(10,(iterations-i-1)))*asdf
+        suma = (suma+asdf)
+    }
+    console.log(suma)*/
+    
 </script>
