@@ -11,7 +11,7 @@ Nos comprometemos a optimizar la eficiencia logística de nuestros clientes, red
 **I+D:** Innovación en productos sostenibles y mejora de materiales.
 **Comercial y Marketing:** Gestión de clientes y estrategias de venta.
 **Logística:** Optimiza almacenamiento y distribución eficiente.
-**Sostenibilidad:** Promueve prácticas ecológicas y normativas ambientales.
+**Sostenibilidad:** Promueve prácticas ecológicas y normativas 
 **Recursos Humanos:** Gestión del personal, formación y bienestar.
 ##### ¿Porque este sistema de organización?
 **Especialización y Eficiencia:** Cada área se enfoca en su especialidad, mejorando productividad y calidad.
@@ -56,7 +56,15 @@ Asegurar la **disponibilidad y uso obligatorio de EPI** (mascarillas, guantes, e
 Implementar **turnos de trabajo rotativos** para equilibrar la carga física y mental.
 Fomentar una cultura de **pausas regulares y descansos breves** para reducir el agotamiento.
 
+### Responsabilidad legal de la emrpesa 
+**Responsabilidad Civil:** Si un trabajador sufre un corte grave al manejar una máquina de corte mal mantenida, la empresa estaría obligada a indemnizar al empleado por los daños físicos y el tiempo de baja, ya que no garantizó la seguridad del equipo.
+
+**Responsabilidad Penal:** Si la empresa no proporciona el equipo de protección adecuado y un empleado inhala productos químicos peligrosos resultando gravemente enfermo, los directivos podrían enfrentar multas o prisión por negligencia grave, ya que no se respetaron las normas de seguridad.
+
+**Responsabilidad Administrativa:** Si la Inspección de Trabajo detecta que los empleados manipulan grandes cargas sin formación ni equipos adecuados, la empresa podría recibir una multa y la suspensión temporal de la actividad hasta que se cumplan las normativas de prevención de riesgos laborales.
+
+
 [^1]: Fundada por Eloy Delgado Pérez y Francisco Javier Quesada Maroto
-[^2]: Numero de empleados 15 numero de socios 2
+[^2]: Numero de empleados 15, Numero de socios 2
 
 
