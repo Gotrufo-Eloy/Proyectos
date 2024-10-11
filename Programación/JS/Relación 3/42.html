@@ -1,0 +1,22 @@
+<script>
+    let numba = Number((prompt("Hola")))
+    let suma = Number(1)
+    let line = "Los factoriales de "+numba+" son: "
+    let sumanext = 1
+    let next =0
+  
+    while (numba!=0){
+        next = numba
+        while(next!=0){ 
+        sumanext = (sumanext*next)
+        next = next - 1
+        }
+        if (next==0){
+            line += numba+"! = "+sumanext+" "
+        }
+        sumanext =1
+        numba--
+    }
+    console.log(line)
+
+</script>
