@@ -1,0 +1,21 @@
+<script>
+    let saldo = 1000
+    
+    while (saldo>0){
+        let retirada = Number(prompt("Saldo: "+saldo+" | Introduzca saldo a retirar: "))
+        console.log("Saldo: "+saldo+" | Introduzca saldo a retirar: "+retirada)
+        console.log(retirada)
+        let savestate = saldo
+        saldo = saldo - retirada
+        if (saldo==0){
+            console.log("Te has quedado sin saldo ¡A trabajar!")
+        }
+        if (saldo<0){
+            saldo=savestate
+            prompt("No tienes esa cantidad! | Saldo: "+savestate+" | Introduzca saldo a retirar: ")
+            console.log("No tienes esa cantidad! | Saldo: "+savestate+" | Introduzca saldo a retirar: "+retirada)
+            
+        }
+    }
+    console.log("Saldo al cerrar la cuenta: "+saldo)
+    </script>
