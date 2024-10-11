@@ -74,7 +74,7 @@ Fomentar una cultura de **pausas regulares y descansos breves** para reducir el 
 - Responsabilidad: La empresa es responsable porque debió controlar los productos. Si el químico estaba caducado, puede enfrentar indemnizaciones y multas.
 
 5. Un empresario de la construcción contrata a un aprendiz, con la intención de ahorrar dinero, para realizar una obra que por su complejidad requiere experiencia y conocimientos. El aprendiz tiene un accidente al desmoronarse la estructura de la obra y sufre heridas de consideración. ¿Qué tipo de responsabilidad tendrá el empresario por su incumplimiento?    
--Responsabilidad: El empresario tiene responsabilidad civil y penal por poner a un aprendiz sin experiencia en un trabajo complicado. Puede recibir multas y tener que pagar indemnizaciones por el accidente.
+- Responsabilidad: El empresario tiene responsabilidad civil y penal por poner a un aprendiz sin experiencia en un trabajo complicado. Puede recibir multas y tener que pagar indemnizaciones por el accidente.
 
 [^1]: Fundada por Eloy Delgado Pérez y Francisco Javier Quesada Maroto
 [^2]: Numero de empleados 15, Numero de socios 2
