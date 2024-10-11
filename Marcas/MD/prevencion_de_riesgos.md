@@ -1,7 +1,8 @@
 # Prevención de Riesgos
 ## Cartones Froy
 ### Mision
-Ser líderes en la fabricación y suministro de soluciones de embalaje sostenible, proporcionando productos de cartón de alta calidad, innovadores y respetuosos con el medio ambiente. Nos comprometemos a optimizar la eficiencia logística de nuestros clientes, reducir el impacto ambiental y fomentar el reciclaje y la economía circular. Nuestra misión es contribuir al éxito de nuestros socios comerciales ofreciendo soluciones personalizadas que protejan sus productos y el planeta."
+Ser líderes en la fabricación y suministro de soluciones de embalaje sostenible, proporcionando productos de cartón de alta calidad, innovadores y respetuosos con el medio ambiente. 
+Nos comprometemos a optimizar la eficiencia logística de nuestros clientes, reducir el impacto ambiental y fomentar el reciclaje y la economía circular. Nuestra misión es contribuir al éxito de nuestros socios comerciales ofreciendo soluciones personalizadas que protejan sus productos y el planeta."
 
 ### Modalidad de organización
 
