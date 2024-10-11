@@ -1,0 +1,21 @@
+<script>
+    let nota = 0
+    let iteration = 0
+    let suma = 0
+    let aprobados = 0
+    let suspensos = 0
+    while (nota!=-1) {
+        iteration++
+        suma = suma+nota
+        nota = Number(prompt("Introduce la calificación del alumno: "))
+        console.log("La calificación del alumno "+iteration+" es "+nota+".") 
+        if (nota>=5&&nota!=-1){
+            aprobados++
+        } else if (nota<5&&nota!=-1){
+            suspensos++
+        }
+    }
+    suma = suma/(iteration-1)
+    console.log("Hay "+aprobados+" alumnos aprobados y "+suspensos+" alumnos suspensos.")
+    console.log("La calificación media es: "+suma)
+    </script>
