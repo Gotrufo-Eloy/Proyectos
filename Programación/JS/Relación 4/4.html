@@ -4,6 +4,11 @@
     let consumo = Number(prompt("Consumo cada 100km: "))/100
     let iterations = 0
     
+    console.log("Introduce el combustible inicial: "+combustible)
+    console.log("Precio del litro de combustible: "+precioL)
+    console.log("Consumo cada 100km: "+(consumo*100))
+
+    
     while (combustible>0){
         iterations ++
         let backup = combustible
@@ -11,12 +16,14 @@
     
         console.log("Kilómetros del viaje "+iterations+": "+km)
         combustible = combustible - km*consumo
-        let precioviaje = km*consumo*precioL
-        console.log("Combustible restante "+iterations+": "+combustible)
-        console.log("Precio del viaje "+iterations+": "+precioviaje+"€")
+        
         if (combustible<0){
             combustible = backup
             console.log ("¡Combustible insuficeinte!")
+        } else {
+            let precioviaje = km*consumo*precioL
+        console.log("Combustible restante "+iterations+": "+combustible)
+        console.log("Precio del viaje "+iterations+": "+precioviaje+"€")
         }
     }
     </script>
