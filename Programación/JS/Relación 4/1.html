@@ -7,7 +7,7 @@
     while (nota!=-1) {
         iteration++
         suma = suma+nota
-        nota = Number(prompt("Introduce la calificación del alumno: "))
+        nota = Number(prompt("Introduce la calificación del alumno: "+iteration))
         console.log("La calificación del alumno "+iteration+" es "+nota+".") 
         if (nota>=5&&nota!=-1){
             aprobados++
