@@ -180,12 +180,7 @@
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-7" value="Facturas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-150" y="-140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="0KJFS4nAVPMvf3J-0yC1-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;endArrow=oval;endFill=0;" edge="1" parent="1" source="0KJFS4nAVPMvf3J-0yC1-13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-164" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="0KJFS4nAVPMvf3J-0yC1-13" value="Trata" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="0KJFS4nAVPMvf3J-0yC1-13" value="Receta" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-130" y="190" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="0KJFS4nAVPMvf3J-0yC1-16" target="0KJFS4nAVPMvf3J-0yC1-3">
@@ -287,9 +282,6 @@
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-80" value="Marca" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="564" y="156" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="0KJFS4nAVPMvf3J-0yC1-82" value="Es_Responsable" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-271" y="195" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0KJFS4nAVPMvf3J-0yC1-83" target="0KJFS4nAVPMvf3J-0yC1-1">
           <mxGeometry relative="1" as="geometry" />
