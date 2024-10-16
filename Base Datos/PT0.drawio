@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="iGj-eRIgSe5eBF_e4WAJ">
-    <mxGraphModel dx="1595" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1480" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,7 +23,7 @@
           <mxGeometry x="-30" y="480" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-5" value="Tratamiento" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="610" width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-6" value="Medicamentos4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="740" width="120" height="60" as="geometry" />
@@ -31,7 +31,7 @@
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-7" value="Facturas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="480" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="0KJFS4nAVPMvf3J-0yC1-13" value="Tratado" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="0KJFS4nAVPMvf3J-0yC1-13" value="Trata" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-130" y="190" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0KJFS4nAVPMvf3J-0yC1-16" value="" style="triangle;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
