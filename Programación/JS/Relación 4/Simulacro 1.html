@@ -1,6 +1,32 @@
 <script>
-
-
-
+    let numdays = Number(prompt("Introduce el número de días del viaje: "))
+    let budget = Number(prompt("Introduce el presupuesto total para el viaje: "))
+    let expensesday
+    let kmday
+    let expensetotal = 0
+    let kmtotal
     
-</script>
+    if (numdays>0 && budget > 0){
+        while (numdays>0){
+            numdays--
+            expensesday = Number(prompt("Introduce los gastos del día "+numdays+": "))
+            kmday = Number(prompt("Introduce los kilómetros recorridos en el día "+numdays+": "))
+            expensetotal = expensetotal+expensesday
+            if (expensetotal<=budget){
+
+            }else {
+                alert("¡Alerta! Has superado el presupuesto de [presupuesto].")
+            }
+            
+    
+        }
+        
+    
+    } else {
+        alert("Datos absurdos!")
+    }
+    
+    
+    
+        
+    </script>
