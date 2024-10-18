@@ -5,28 +5,35 @@
     let kmday
     let expensetotal = 0
     let kmtotal
+    let overbudget = false
+    console.log("Presupuesto "+budget)
+    console.log("días "+numdays)
     
     if (numdays>0 && budget > 0){
-        while (numdays>0){
-            numdays--
-            expensesday = Number(prompt("Introduce los gastos del día "+numdays+": "))
-            kmday = Number(prompt("Introduce los kilómetros recorridos en el día "+numdays+": "))
+        for (i=1;i<numdays+1 && overbudget==false;i++){
+            expensesday = Number(prompt("Introduce los gastos del día "+i+": "))
+            kmday = Number(prompt("Introduce los kilómetros recorridos en el día "+i+": "))
             expensetotal = expensetotal+expensesday
+            
             if (expensetotal<=budget){
-
+                kmtotal=kmtotal+kmday
+                console.log("Día "+i+" :")
+                console.log("Gastos del día "+i+": "+expensesday)
+                console.log("Kilómetros del día "+i+": "+kmday)
             }else {
+                overbudget=true
                 alert("¡Alerta! Has superado el presupuesto de [presupuesto].")
             }
-            
-    
+            if (i=(numdays+2) && overbudget==false){
+                let expenseavg = expensetotal/numdays
+                let budgetpercent = (1-((budget-expensetotal)/budget))*100
+                console.log("Resumen del viaje: ")
+                console.log("- Total de kilómetros recorridos: "+kmtotal)
+                console.log("- Gasto diario medio: "+expenseavg)
+                console.log("- Porcentaje del presupuesto gastado: "+budgetpercent)
+            }
         }
-        
-    
     } else {
         alert("Datos absurdos!")
-    }
-    
-    
-    
-        
+    }    
     </script>
