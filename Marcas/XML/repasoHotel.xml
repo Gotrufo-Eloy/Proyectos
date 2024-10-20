@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="C:\Users\falso\OneDrive\Documentos\Proyectos\Marcas\XSD\repasoHotel.xsd">
+
+       <room>
+              <roomNumber>123</roomNumber>
+              <roomType>Individual</roomType>
+              <priceNight>100</priceNight>
+       </room>
+       <room>
+              <roomNumber>123</roomNumber>
+              <roomType>Individual</roomType>
+              <priceNight>100</priceNight>
+       </room>
+       
+       <huesped>
+              <idHuesped>HUESPED-1234</idHuesped>
+              <nombreHuesped>EloyDelgado</nombreHuesped>
+              <fechaEntrada>2024-10-10</fechaEntrada>
+              <fechaSalida>2024-10-11</fechaSalida>
+              <roomNumber>321</roomNumber>
+       </huesped>
+       <huesped>
+              <idHuesped>HUESPED-1234</idHuesped>
+              <nombreHuesped>EloyDelgado</nombreHuesped>
+              <fechaEntrada>2024-10-10</fechaEntrada>
+              <fechaSalida>2024-10-11</fechaSalida>
+              <roomNumber>123</roomNumber>
+       </huesped>
+</hotel>
