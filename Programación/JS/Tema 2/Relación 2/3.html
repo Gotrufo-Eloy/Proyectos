@@ -1,0 +1,28 @@
+<script>
+    const jugadores = ["Jugador1", "Jugador2", "Jugador3", "Jugador4", "Jugador5"];
+    const puntuaciones = [120, 200, 150, 180, 220];
+    let respuesta = 0
+    let nuevoJugador = 0
+    let nuevaPuntuacion = 0
+    let line = ""
+
+    while (respuesta != 3) {
+        respuesta = Number(prompt("Respuesta"))
+        if (respuesta == 1) {
+            nuevoJugador = prompt("Nuevo jugador")
+            nuevaPuntuacion = prompt("Puntuacion del jugador " + nuevoJugador)
+            jugadores.shift()
+            jugadores.push(nuevoJugador)
+            puntuaciones.shift()
+            puntuaciones.push(nuevaPuntuacion)
+        } else if (respuesta == 2) {
+            for (i=0;i<jugadores.length;i++){
+                line +=jugadores[i] + " Puntuacion: " + puntuaciones[i] + "\n"
+            }
+            console.log(line)
+            line = ""
+        } else if (respuesta == 3) {
+            console.log("bye puta ")
+        }
+    }
+</script>

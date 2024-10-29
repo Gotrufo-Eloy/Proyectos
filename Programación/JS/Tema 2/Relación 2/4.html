@@ -1,0 +1,38 @@
+<script>
+    const libros = ["TonyHauk", "Tonyysusparrillitas", "EloyElbestprogramer", "Jugador4", "Jugador5"];
+    const cantidad = [120, 200, 150, 180, 220];
+    let respuesta = 0
+    let nuevoLibro = 0
+    let nuevaCantidad = 0
+    let line = ""
+
+    while (respuesta != 4) {
+        respuesta = Number(prompt("1. Añadir un nuevo libro al inventario (con su título y cantidad)."+"\n"+"2. Actualizar la cantidad de un libro existente."+"\n"+"3. Ver el inventario completo (título y cantidad de cada libro)."+"\n"+"4. Salir del programa."))
+        if (respuesta == 1) {
+            nuevoLibro = prompt("Nuevo libro")
+            nuevaCantidad = prompt("Nuevo cantidad")
+            libros.push(nuevoLibro)
+            cantidad.push(nuevaCantidad)
+        } else if (respuesta == 3) {
+            for (i=0;i<libros.length;i++){
+                line +=libros[i] + " cantidad: " + cantidad[i] + "\n"
+            }
+            console.log(line)
+            line = ""
+        } else if (respuesta == 2) {
+            for (i=0;i<libros.length;i++){
+                line +=libros[i] + " cantidad: " + cantidad[i] + "\n"
+            }
+            console.log(line)
+            
+            let cambioLibro = prompt("Libro a cambiar: "+"\n"+line)
+            line = ""
+            for (i=0;i<libros.length;i++) {
+                if (cambioLibro == libros[i]) {
+                    cant = Number(prompt("Cantidad: "))
+                    cantidad[i]=cant
+                }
+            }
+        }
+    }
+</script>

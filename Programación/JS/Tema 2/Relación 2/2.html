@@ -1,0 +1,24 @@
+<script>
+
+    const productos = ["Manzanas", "Plátanos", "Leche", "Pan", "Huevos", "Azúcar", "Harina", "Arroz", "Pasta", "Café"]
+    const precios = [1.20, 0.80, 1.50, 1.00, 2.00, 1.10, 0.90, 0.70, 1.30, 3.00]
+    let producto
+    let sumatorio = 0
+    let cantidad
+    let line = ""
+
+    while (producto != "FIN") {
+        producto = prompt("Nombre del producto: ")
+        if (producto != "FIN") {
+            for (i=0;i<productos.length;i++) {
+                if (producto == productos[i]) {
+                    cantidad = Number(prompt("Cantidad: "))
+                    sumatorio += precios[i] * cantidad
+                    line += "Producto " + producto + " Cantidad " + cantidad + "\n"
+                }
+            }
+        }
+    }
+    console.log(line + "Coste total =" + sumatorio)
+
+</script>
