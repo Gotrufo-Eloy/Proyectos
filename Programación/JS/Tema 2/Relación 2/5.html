@@ -1,0 +1,47 @@
+<script>
+    const estudiantes = ["Jugador1", "Jugador2", "Jugador3", "Jugador4", "Jugador5"]
+    const calificaciones = [8, 5, 6, 5, 7]
+    let estudiante
+    let calificacion
+    let promedio = 0
+    let calificacionMax = -1
+    let calificacionMin = 11
+    let indicecalificacionMax = 0
+    let indicecalificacionMin = 0
+    let respuesta
+
+    while (respuesta != 5) {
+        respuesta = Number(prompt("1. Añadir un estudiante y su calificación. \n 2. Mostrar la calificación promedio de la clase. \n 3. Mostrar la calificación más alta y el nombre del estudiante correspondiente. \n 4. Mostrar la calificación más baja y el nombre del estudiante correspondiente. \n 5. Salir del programa."))
+        if (respuesta == 1) {
+            estudiante = prompt("Nuevo estudiante")
+            calificacion = prompt("Nueva calificación")
+            estudiantes.push(estudiante)
+            calificaciones.push(calificacion)
+            console.log(estudiantes)
+            console.log(calificaciones)
+        } else if (respuesta == 3) {
+            for (i=0; i < estudiantes.length; i++) {
+                if (calificaciones[i] > calificacionMax) {
+                    calificacionMax = calificaciones[i]
+                    indicecalificacionMax = i
+                }
+            }
+            console.log(estudiantes[indicecalificacionMax]+" Nota: "+calificacionMax)
+        } else if (respuesta == 2) {
+            for (i = 0; i < estudiantes.length; i++) {
+                promedio += calificaciones[i]
+            }
+            promedio = (promedio/(calificaciones.length))
+            console.log(promedio)
+            promedio = 0 
+        } else if (respuesta == 4) {
+            for (i = 0; i < estudiantes.length; i++) {
+                if (calificaciones[i] < calificacionMin) {
+                    calificacionMin = calificaciones[i]
+                    indicecalificacionMin = i
+                }
+            }
+            console.log(estudiantes[indicecalificacionMin]+" Nota: "+calificacionMin)
+        }
+    }
+</script>
