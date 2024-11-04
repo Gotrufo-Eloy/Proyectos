@@ -1,0 +1,86 @@
+<script>
+    let respuesta
+    const alimentos = ["a", "a", "a", "a"]
+    const felicidad = ["<3"]
+    const estiercol = ["e"]
+    let iteraciones = 0
+    let cantidadComida = 0
+    let error = false
+
+    //Creacion del while para el menú del jugador
+    while (respuesta != 5) {
+        console.log("Felicidad: " + felicidad + "\nAlimentos Disponibles: " + alimentos + "\nEstablo: " + estiercol)
+        respuesta = Number(prompt("1. 🌾Alimentar a los animales🌾 \n 2. Jugar con los animales \n 3. Limpiar el establo. \n 4. Comprar comida. \n 5. Salir del programa."))
+        //Implementacion de la alimentacion de los animales teniendo en cuenta si hay suficientes alimentosy no mas de 3 uds de estiercol
+        if (respuesta == 1) {
+            if (alimentos.length != 0 && estiercol.length <= 3) {
+                opcionesAlimento = Number(prompt("1. Forraje (-1🌾) \n 2.Fruta (-1🌾 +1❤)"))
+                if (opcionesAlimento == 1) {
+                    alimentos.pop()
+                } else if (opcionesAlimento == 2) {
+                    alimentos.pop()
+                    //Comprobacion de que la felicidad no exceda el numero máximo (4uds de felicidad)
+                    if (felicidad.length < 4) {
+                        felicidad.push("<3")
+                    }
+                }
+            //Mensajes de error en caso de que no se pueda realizar la accion 
+            } else {
+                if (alimentos.length != 0) {
+                    alert("No hay comida suficiente")
+                } else if (estiercol.length <= 3) {
+                    alert("Hay demasiado estiercol")
+                }
+                error = true
+            }
+        //Implementecion de jugar con los animales teniendo en cuenta si hay suficientes alimentos y no mas de 3 uds de estiercol
+        } else if (respuesta == 2) {
+            if (alimentos.length != 0 && estiercol.length <= 3) {
+                alimentos.pop()
+                //Comprobacion de que la felicidad no exceda el numero máximo (4uds de felicidad)
+                if (felicidad.length < 4) {
+                    felicidad.push("<3")
+                }
+                //Mensajes de error en caso de que no se pueda realizar la accion 
+            } else {
+                if (alimentos.length != 0) {
+                    alert("No hay comida suficiente")
+                } else if (estiercol.length <= 3) {
+                    alert("Hay demasiado estiercol")
+                }
+            }
+        //Implementación de la limpieza del establo [Quitamos tantas uds de estiercol como .length tenga su array]
+        } else if (respuesta == 3) {
+            for (i = 0; i < estiercol.length; i++) {
+                estiercol.pop()
+            }
+        //Implementación de la compra [Añadimos tantas uds de comida como nos falten para llegar al máximo (4uds)]
+        } else if (respuesta == 4) {
+            cantidadComida = 4 - alimentos.length
+            for (i = 0; i < cantidadComida; i++) {
+                alimentos.push("a")
+            }
+        //Implementación de la salida en la que realizamos un ultimo console.log para que el usuario vea el final de su partida
+        } else if (respuesta == 5) {
+            console.log("Final de partida:\nFelicidad: " + felicidad + "\nAlimentos Disponibles: " + alimentos + "\nEstablo: " + estiercol)
+            error = true
+        //Else para cualquier otro número en caso de que el usuario ponga un numero fuera de las opciones del menú
+        } else {
+            error = true
+            alert("Ese input no tiene una funcion asignada")
+        }
+
+        //Gestion de estiercol en situaciones normales y anomalas [Por ejemplo evitar poner mas uds de estiercol cuando no hayamos realizado una opcion por falta de alimentos]
+        if (error == false) {
+            iteraciones++
+            console.log("e")
+            //Aumento de las unidades de estiercol
+            if (iteraciones == 3 && estiercol.length < 6) {
+                estiercol.push("e")
+                iteraciones = 0
+            }
+        } else {
+            error = false
+        }
+    }
+</script>
