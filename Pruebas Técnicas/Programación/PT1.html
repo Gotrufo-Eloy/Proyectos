@@ -1,0 +1,38 @@
+<script>
+// Creamos las variables encargadas de recoger los datos del usuario
+let deviceNumber = Number(prompt("Introduce el número de electrodomésticos a registrar: "))
+let kwhPrice = Number(prompt("Introduce el precio por kilovatio-hora (kWh): "))
+let totalPower = Number(prompt("Introduce la potencia total contratada (en vatios): "))
+//Creamos las variables que vamos a usar para el bucle y/o de forma operacional
+let monthlyPower = 0
+let devicePower = 0
+let deviceUsage = 0
+//Creamos un buleano para poder romper en cualquier momento el bucle si se da el caso de que nos pasamos de potencia [Entiendo que habrá otras formas pero esta me parece la mas sencilla y consistente]
+let overPower = false
+//Imprimimos en la pantalla todos los datos que han de aparecer al comienzo del ejercicio
+console.log("Introduce el número de electrodomésticos a registrar: "+deviceNumber)
+console.log("Introduce el precio por kilovatio-hora (kWh): "+kwhPrice)
+console.log("Introduce la potencia total contratada (en vatios): "+totalPower)
+//Creamos el bucle (con valor i=1 para que hacer el Prompt y el console.log sea mas conveniente)
+for (i=1;i<=deviceNumber && overPower==false;i++){
+    devicePower = Number(prompt("Introduce la potencia del electrodoméstico "+i+" (en vatios): "))
+    console.log("Introduce la potencia del electrodoméstico 1 (en vatios): "+devicePower)
+    //Despues de pedir la potencia del dispositivo comprobamos si es mayor que la potencia contratada
+    if (devicePower<totalPower){
+        //En caso de que no sea mayor proseguimos con el programa 
+        deviceUsage = Number(prompt("Introduce el número de horas de uso diario: "))
+        console.log("Introduce el número de horas de uso diario: "+deviceUsage)
+        monthlyPower += (devicePower/1000*deviceUsage*30)
+        //En la ultima iteración del bucle, es decir i==deviceNumber, hacemos los calculos finales de Gasto en kWh y €
+        if (i==deviceNumber){
+            console.log("Consumo total mensual: "+monthlyPower+" kWh")
+            let totalCost = monthlyPower*kwhPrice
+            console.log("Coste total mensual: "+totalCost+" €")
+        }
+    //En caso de que el dispositivo consuma mas W que los contratados, alertamos al usuario (alternativamente con console.log) y cambiamos el valor del buleano para interrumpir el bucle
+    } else {
+        overPower = true
+        alert("¡Alerta! Has superado la potencia de "+totalPower+" W.")
+    }
+}
+</script>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="PT1.xsd">
+    <videojuego>
+        <titulo>Halo</titulo>
+        <plataforma>Xbox</plataforma>
+        <precio>10.99</precio>
+        <fechaLanzamiento>2001-10-23</fechaLanzamiento>
+        <mesLanzamiento>Octubre</mesLanzamiento>
+        <Clasificación>T</Clasificación>
+        <Desarrollador>Microsoft</Desarrollador>
+        <Versión>v1.2</Versión>
+    </videojuego>
+
+    <venta>
+        <id>VENTA-1234</id>
+        <fechaVenta>2001-10-24</fechaVenta>
+        <mesVenta>Octubre</mesVenta>
+        <unidadesVendidas>5</unidadesVendidas>
+        <metodoPago>Efectivo</metodoPago>
+        <videojuego>Halo</videojuego>
+    </venta>
+</tienda>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda [ <!ELEMENT tienda (seccion+)>
+<!ELEMENT seccion (nombre, productos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (titulo, detalles, precio, stock, promociones)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT detalles (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT promociones (promocion+)>
+<!ELEMENT promocion (nombrePromocion, descripcion, fechaInicio, fechaFin)>
+<!ELEMENT nombrePromocion (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+<!ATTLIST seccion tipo CDATA #REQUIRED>
+                                                            ]>
+
+<tienda>
+    <seccion tipo="123">
+        <nombre>oldSchool</nombre>
+        <productos>
+            <producto>
+                <titulo>Halo</titulo>
+                <detalles>none</detalles>
+                <precio>10.99</precio>
+                <stock>100</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento1
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+            <producto>
+                <titulo>Halo2</titulo>
+                <detalles>none</detalles>
+                <precio>10.98</precio>
+                <stock>110</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento2
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+            <producto>
+                <titulo>Halo2</titulo>
+                <detalles>none</detalles>
+                <precio>10.98</precio>
+                <stock>110</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento2
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+        </productos>
+    </seccion>
+    <seccion tipo="234">
+        <nombre>oldSchool</nombre>
+        <productos>
+            <producto>
+                <titulo>Halo</titulo>
+                <detalles>none</detalles>
+                <precio>10.99</precio>
+                <stock>100</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento1
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+            <producto>
+                <titulo>Halo2</titulo>
+                <detalles>none</detalles>
+                <precio>10.98</precio>
+                <stock>110</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento2
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+            <producto>
+                <titulo>Halo2</titulo>
+                <detalles>none</detalles>
+                <precio>10.98</precio>
+                <stock>110</stock>
+                <promociones>
+                    <promocion>
+                        <nombrePromocion>descuento2
+                        </nombrePromocion>
+                        <descripcion>hay descuentillo
+                        </descripcion>
+                        <fechaInicio>23/10/2024
+                        </fechaInicio>
+                        <fechaFin>30/10/2024</fechaFin>
+                    </promocion>
+                </promociones>
+            </producto>
+        </productos>
+    </seccion>
+</tienda>

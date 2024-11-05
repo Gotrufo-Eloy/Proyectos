@@ -1,0 +1,126 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="mesesAño">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Enero"/>
+        <xs:enumeration value="Febrero"/>
+        <xs:enumeration value="Marzo"/>
+        <xs:enumeration value="Abril"/>
+        <xs:enumeration value="Mayo"/>
+        <xs:enumeration value="Junio"/>
+        <xs:enumeration value="Julio"/>
+        <xs:enumeration value="Agosto"/>
+        <xs:enumeration value="Septiembre"/>
+        <xs:enumeration value="Octubre"/>
+        <xs:enumeration value="Noviembre"/>
+        <xs:enumeration value="Diciembre"/>                                    
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="fechas">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{4}-\d{2}-\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="videojuego" minOccurs="1" maxOccurs="5">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="plataforma">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="PlayStation"/>
+                                        <xs:enumeration value="Xbox"/>
+                                        <xs:enumeration value="PC"/>
+                                        <xs:enumeration value="Switch"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="precio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:float">
+                                        <xs:minExclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fechaLanzamiento" type="fechas">
+                            </xs:element>
+                            <xs:element name="mesLanzamiento" type="mesesAño">
+                            </xs:element>
+                            <xs:element name="Clasificación">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="E"/>
+                                        <xs:enumeration value="T"/>
+                                        <xs:enumeration value="M"/>
+                                        <xs:enumeration value="A"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Desarrollador">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{3,}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Versión">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="v\d{1,}.\d{1,}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="venta">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="VENTA-\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fechaVenta" type="fechas">
+                            </xs:element>
+                            <xs:element name="mesVenta" type="mesesAño">
+                            </xs:element>
+                            <xs:element name="unidadesVendidas">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="metodoPago">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Tarjeta"/>
+                                        <xs:enumeration value="Efectivo"/>
+                                        <xs:enumeration value="Paypal"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="videojuego">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
