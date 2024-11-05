@@ -1,7 +1,7 @@
 CREATE TABLE Departamento(
     id_departamento INT AUTO_INCREMENT PRIMARY KEY,
     nombre_departamento VARCHAR(50) NOT NULL
-);
+); 
 CREATE TABLE Empleado(
     id_empleado INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
