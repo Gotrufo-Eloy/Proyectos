@@ -1,0 +1,24 @@
+<script>
+
+    
+
+    function palabraMasLarga(arrayPalabras) {
+        let palabraMasLarga = arrayPalabras[0]
+        for (i = 0; i < arrayPalabras.length; i++) {
+            let palabraActual = arrayPalabras[i]
+            if (palabraActual.length > palabraMasLarga.length) {
+                palabraMasLarga = palabraActual
+            }
+        }
+
+        return palabraMasLarga
+
+    }
+    console.log(".")
+    const palabras = ["apple", "banana", "palabramuylarga", "kiwi", "watermelon"]
+    let solucion = palabraMasLarga(palabras)
+
+    console.log("La palabra mas larga es: " + solucion)
+
+
+</script>

@@ -1,0 +1,13 @@
+<script>
+    function multiplicadorPrecios(arrayInicial,multiplicador){
+        const arrayFinal = []
+        for (i=0;i<arrayInicial.length;i++){
+            arrayFinal[i] = arrayInicial[i]*multiplicador
+        }
+        return arrayFinal
+    }
+
+    const precios = [100, 200, 300]
+    let multistrike=prompt("Multiplicador: ")
+    console.log(multiplicadorPrecios(precios,multistrike))
+</script>

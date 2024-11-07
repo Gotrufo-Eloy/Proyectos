@@ -1,0 +1,14 @@
+<script>
+    const palabras = ["Alice", "Bob", "Amy", "David", "Davinson"]
+    let letra = prompt("Introduce una letra del abecedario en mayus")
+    const solucion = []
+
+    for (i = 0; i < palabras.length; i++) {
+        let palabra = palabras[i]
+        if (palabra[0] == letra) {
+            solucion.push(palabra)
+        }
+    }
+
+    console.log(solucion)
+</script>
