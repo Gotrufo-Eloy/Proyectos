@@ -1,0 +1,13 @@
+<script>
+function contarLetras(array){
+    const solucion = []
+    let palabra
+    for (i=0;i<array.length;i++){
+        palabra = array[i]
+        solucion.push(palabra.length)
+    }
+    return solucion
+}
+const frutas = ["apple", "banana", "kiwi"]
+console.log(contarLetras(frutas))
+</script>

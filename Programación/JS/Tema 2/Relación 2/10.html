@@ -1,0 +1,39 @@
+<script>
+
+    function listMerge(list1, list2) {
+        const listMerged = []
+        let error = false
+        for (i = 0; i < list1.length; i++) {
+            error = false
+            for (j = 0; j < list2.length; j++) {
+                if (list1[i] == list2[j] && error == false) {
+                    listMerged.push(list1[i])
+                    error = true
+                }
+            }
+            if (error == false){
+                listMerged.push(list1[i])
+            }
+        }
+        for (i = 0; i < list1.length; i++) {
+            error = false
+            for (j = 0; j < list2.length; j++) {
+                if (list1[j] == list2[i]) {
+                    error = true
+                }
+            }
+            if (error == false){
+                listMerged.push(list2[i])
+            }
+        }
+        return listMerged
+    }
+
+    const lista1 = ["milk", "eggs", "bread"]
+    const lista2 = ["bread", "butter", "cheese"]
+
+    console.log(listMerge(lista1, lista2))
+
+
+
+</script>
