@@ -1,0 +1,1 @@
+SELECT nombre_producto,precio FROM Producto;

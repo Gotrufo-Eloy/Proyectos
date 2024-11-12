@@ -42,5 +42,26 @@ CREATE TABLE Pedido(
     FOREIGN KEY (id_producto) REFERENCES Producto(id_producto)
 );
 
+INSERT INTO Departamento (nombre_departamento)
+VALUES ('departamento1');
+
+INSERT INTO Empleado (nombre,apellido,salario,fecha_contratación,id_departamento)
+VALUES ('Eloy','Delgado',200,'20-12-14',1),
+       ('Alvaro','Iniesta',2000,'20-12-14',1),
+       ('Felix','Lazaro',20000,'20-12-14',1),
+       ('Francisco','Javier',200000,'20-12-14',1),
+       ('Angel','Hernandez',2000000,'20-12-14',1);
+
+INSERT INTO Producto (nombre_producto,precio,stock,fecha_adiccion)
+VALUES ('a',1,200,'20-12-14'),
+       ('b',2,2000,'20-12-14'),
+       ('c',3,20000,'20-12-14'),
+       ('d',4,200000,'20-12-14'),
+       ('e',5,2000000,'20-12-14'),
+       ('f',6,200,'20-12-14'),
+       ('g',7,2000,'20-12-14'),
+       ('h',8,20000,'20-12-14'),
+       ('i',9,200000,'20-12-14'),
+       ('j',10,2000000,'20-12-14');
 
 
