@@ -1,0 +1,21 @@
+<script>
+function caraOCruz(){
+    let monedaNumero = parseInt( Math.random() * (2))
+    let moneda = "Cruz"
+    if (monedaNumero==1){
+        moneda = "Cara"
+    }
+    return moneda
+}
+function listasCarasOCruces(numeroDeIteraciones) {
+    const arrayVacio = []
+    for (i=0;i<numeroDeIteraciones;i++){
+        arrayVacio.push(caraOCruz)
+    }
+    return arrayVacio
+}
+
+
+
+
+</script>
