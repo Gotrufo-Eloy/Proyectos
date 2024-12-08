@@ -46,7 +46,7 @@ INSERT INTO Departamento (nombre_departamento)
 VALUES ('departamento1');
 
 INSERT INTO Empleado (nombre,apellido,salario,fecha_contratación,id_departamento)
-VALUES ('Eloy','Delgado',200,'20-12-14',1),
+VALUES ('juanki','Delgado',200,'20-12-14',1),
        ('Alvaro','Iniesta',2000,'20-12-14',1),
        ('Felix','Lazaro',20000,'20-12-14',1),
        ('Francisco','Javier',200000,'20-12-14',1),
@@ -63,5 +63,4 @@ VALUES ('a',1,200,'20-12-14'),
        ('h',8,20000,'20-12-14'),
        ('i',9,200000,'20-12-14'),
        ('j',10,2000000,'20-12-14');
-
 

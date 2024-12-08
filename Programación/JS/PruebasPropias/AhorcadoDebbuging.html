@@ -1,0 +1,60 @@
+<script>
+    let palabra = prompt("Introduce la palabra que vamos a usar en el ahorcado: ").toUpperCase()
+    let intento = ""
+    let vidas = ["<3", "<3", "<3", "<3", "<3", "<3"]
+    let resuelto = false
+    let perderVidas = false
+    const palabraOculta = []
+    let line = ""
+
+    //Llenamos el array palabraOculta de _ para que el usuario sepa el numero de letras
+    for (i = 0; i < palabra.length; i++) {
+        palabraOculta.push("_")
+    }
+    // Creamos la funcion que imprime por pantalla las vidas y la palabra palabraOculta que luego usaremos en el codigo 
+    function linePrints(array) {
+        line = ""
+        for (i = 0; i < array.length; i++) {
+            line += array[i]
+        }
+        return console.log(line)
+    }
+    while (intento != "SALIR" && resuelto == false) {
+        // Console logs de la palabra palabraOculta (PA_A_A) 
+        linePrints(palabraOculta)
+        // Console logs de las vidas
+        linePrints(vidas)
+        // Comprobacion de que estes vivo y no este resuelto
+        if (vidas.length > 0 && resuelto == false) {
+            intento = prompt("Introduce una letra").toUpperCase()
+            // Comprobacion de si el intento esta en palabra
+            if (intento.length == 1) {
+                perderVidas = true
+                for (i = 0; i < palabra.length; i++) {
+                    if (intento != palabra[i]) {
+                    } else {
+                        palabraOculta[i] = palabra[i]
+                        perderVidas = false
+                    }
+                }
+                // Perdida de vidas
+                if (perderVidas == true) {
+                    vidas.pop()
+                }
+                // Comprobacion de si esta resuelto 
+                resuelto = true
+                for (i = 0; i < palabraOculta.length && resuelto == true; i++) {
+                    if (palabraOculta[i] != palabra[i]) {
+                        resuelto = false
+                    }
+                }
+                if (resuelto == true) {
+                    linePrints(palabraOculta)
+                    console.log("Has ganado")
+                }
+            } else {
+                alert("IMPUT INCORRECTO CAZURRO")
+            }
+        }
+    }
+</script>

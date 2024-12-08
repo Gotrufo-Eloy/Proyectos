@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="Ahorcado.css" />
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>Juego del Ahorcado</h1>
+        <h2 id="word-container"></h2>
+        <div id="letters-container"></div>
+        <div id="hint-container"></div>
+        <button id="hint-button">Comprar Pista (100 puntos o 2 vidas)</button>
+        <div id="message-container"></div>
+    </div>
+    <div id="info-container">
+        <div id="attempts-container">Vidas: <span id="attempts-count">❤❤❤❤❤❤</span></div>
+        <div id="points-container">Palabras: <span id="words-count">0</span> | Puntos: <span id="points-count">0</span></div>
+    </div>
+    <div id="highscores-container">
+        <h3>Mejores Puntuaciones</h3>
+        <table id="highscores-table">
+            <tr>
+                <th>Posición</th>
+                <th>Puntos</th>
+                <th>Palabras</th>
+                <th>Nombre</th>
+            </tr>
+        </table>
+    </div>
+    <div id="name-prompt-container" class="hidden">
+        <div id="name-prompt-box">
+            <h3>Introduce tu nombre:</h3>
+            <input type="text" id="player-name" />
+            <button id="save-name-button">Guardar</button>
+        </div>
+    </div>
+    <script src="Ahorcado.js"></script>
+</body>
+</html>
