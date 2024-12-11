@@ -54,6 +54,9 @@
   - **Representación de los trabajadores**: delegados de prevención, comité de seguridad y salud.
 
 ### 8. **Autoprotección y Primeros Auxilios**
+PAS
+SHORT
+
 - **Medidas preventivas y de protección**: prevenir en el origen, proteger colectivamente, EPI.
 - **Primeros auxilios**:
   - **RCP** (Reanimación Cardio Pulmonar) y **soporte vital básico**.
