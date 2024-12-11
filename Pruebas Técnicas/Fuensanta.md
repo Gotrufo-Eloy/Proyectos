@@ -1,4 +1,4 @@
-Aquí tienes un resumen con bullet points para una presentación oral de 10-15 minutos sobre los riesgos laborales:
+**El riesgo laboral es toda circunstancia capaz de causar un peligro en el contexto del desarrollo de una actividad laboral**
 
 ### 1. **Introducción a los Riesgos Laborales**
 - Relación entre **condiciones de trabajo**, **riesgos laborales** y **daños laborales**.
