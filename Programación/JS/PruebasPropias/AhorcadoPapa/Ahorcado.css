@@ -19,7 +19,8 @@ body {
 #letters-container {
     display: grid;
     grid-template-columns: repeat(9, auto);
-    gap: 2px; /* Reducir el espacio entre los botones */
+    gap: 2px;
+    /* Reducir el espacio entre los botones */
     justify-content: center;
 }
 
@@ -28,7 +29,8 @@ button {
     color: black;
     border: none;
     padding: 10px;
-    margin: 2px; /* Reducir el margen entre los botones */
+    margin: 2px;
+    /* Reducir el margen entre los botones */
     cursor: pointer;
 }
 
@@ -47,7 +49,8 @@ h1 {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    width: 80%; /* Ajustar ancho para abordar al menos el 80% del contenedor */
+    width: 80%;
+    /* Ajustar ancho para abordar al menos el 80% del contenedor */
 }
 
 h2,
@@ -72,12 +75,14 @@ h3 {
     color: black;
     padding: 10px;
     border-radius: 10px;
-    width: 290px; /* Ajustar ancho para dejar 20px de espacio entre ellos */
+    width: 290px;
+    /* Ajustar ancho para dejar 20px de espacio entre ellos */
     margin: 0 10px;
 }
 
 #highscores-container {
-    margin-top: 20px; /* Añadir margen superior */
+    margin-top: 20px;
+    /* Añadir margen superior */
 }
 
 #highscores-table {
@@ -96,7 +101,8 @@ h3 {
 }
 
 #hint-container {
-    margin-top: 20px; /* Añadir 20px de margen superior */
+    margin-top: 20px;
+    /* Añadir 20px de margen superior */
 }
 
 #hint-container h3 {
@@ -134,5 +140,5 @@ h3 {
     color: black;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    text-align: center;
 }
