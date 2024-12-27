@@ -1,0 +1,28 @@
+<script>
+    function Solucion(money, children) {
+        let childs = []
+        let success = 0
+        for (let i = 0; i < children; i++) {
+            if (money > 8) {
+                childs[i] = 8
+                money = money - 8
+            } else {
+                childs[i] = money
+                if (childs[i] == 4) {
+                    childs[i] = childs[i] - 1
+                    childs[i - 1] = childs[i - 1] + 1
+                }
+            }
+
+        }
+        for (let i = 0; i < childs.length; i++) {
+            if (childs[i] == 8) {
+                success++
+            }
+        }
+        return success
+    }
+    console.log(Solucion(20, 3))
+    console.log(Solucion(16, 2))
+
+</script>

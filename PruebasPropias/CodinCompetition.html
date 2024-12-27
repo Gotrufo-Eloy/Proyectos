@@ -1,0 +1,56 @@
+<script>
+    /* You are given two strings s1 and s2 of wqual length.A string swap is an operation where you choose two indicies in a string(not necessarily different) and swap the characters at these índices 
+    Return true if its posible to make btoh strings equal by preformin at most one string swap on exactly one of the strings.Otherwhise, return false
+    Example1:
+    Input: s1 ? "bank" s2 = "kanb"
+    output: true
+    explanation: For example swap the first carácter with the last carácter of s2 to make "bank" */
+
+    function solucion(s1, s2) {
+        let inconsistencies = 0
+        let buleano = false
+        let comprobacionPermuta = false
+        for (i = 0; i < s1.length; i++) {
+            if (s1[i] != s2[i]) {
+                inconsistencies++
+                for (let j = 0; j < s2.length; j++) {
+                    if (s1[i] == s2[j] && s2[i] == s1[j]) {
+                        comprobacionPermuta = true
+                    }
+                }
+            }
+        }
+        if (inconsistencies == 0 || (inconsistencies == 2 && comprobacionPermuta == true)) {
+            buleano = true
+        } else {
+            buleano = false
+        }
+        console.log(buleano)
+        return buleano
+    }
+
+
+    solucion("amor", "roma")
+    solucion("lima", "mila")
+    solucion("río", "orí")
+    solucion("saco", "caso")
+    solucion("duro", "rudo")
+    solucion("roca", "caro")
+    solucion("mora", "roma")
+    solucion("casa", "saca")
+    solucion("lana", "anal")
+    solucion("pato", "topo")
+    solucion("sol", "los")
+    solucion("mar", "ram")
+    solucion("tira", "rita")
+    solucion("pera", "pare")
+    solucion("silla", "lilas")
+    solucion("taco", "cota")
+    solucion("nota", "tano")
+    solucion("rosa", "sora")
+    solucion("miel", "lime")
+    solucion("vela", "vale")
+
+
+
+</script>
