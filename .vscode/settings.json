@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "root",
+            "database": "ejercicio4",
+            "username": "root",
+            "password": "yk347wdy3ymf"
+        }
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

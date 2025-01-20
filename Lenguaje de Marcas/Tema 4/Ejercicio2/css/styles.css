@@ -1,0 +1,9 @@
+p {
+    color: blue;
+}
+.destacado{
+    background-color: rgb(108, 201, 244);
+}
+#accion{
+    font-size: larger;
+}

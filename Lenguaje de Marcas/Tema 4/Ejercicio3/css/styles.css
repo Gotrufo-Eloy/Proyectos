@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+}
+div>ol>li{
+    color: rgb(255, 0, 0);
+}
+div+p{
+    background-color: blue;
+}
