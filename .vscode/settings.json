@@ -15,5 +15,9 @@
             "password": "yk347wdy3ymf"
         }
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Programación/Java/Tema1",
+        "PruebasPropias/Java"
+    ]
 }
