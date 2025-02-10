@@ -11,8 +11,8 @@ calculadora(){
             solucion=$(($numero1 - $numero2))
         elif [  $operador = "/" ]; then 
             solucion=$(($numero1 / $numero2))
-        elif [  $operador = "*" ]; then 
-            solucion=$(($numero1 \* $numero2))
+        elif [  $operador = "\*" ]; then 
+            solucion=$(($numero1 * $numero2))
         else
             mensaje="Operador Desconocido"
             solucion=""
@@ -25,4 +25,4 @@ calculadora(){
 calculadora 1 "+" 2
 calculadora 1 "-" 2
 calculadora 1 "/" 2
-calculadora 1 "*" 2
+calculadora 1 "\*" 2

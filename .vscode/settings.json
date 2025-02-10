@@ -17,7 +17,8 @@
     ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "PruebasPropias/Java",
         "Programación/Java/Tema1",
-        "PruebasPropias/Java"
+        "Programación/Java/Tema2"
     ]
 }
