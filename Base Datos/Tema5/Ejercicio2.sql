@@ -5443,20 +5443,25 @@ SET autocommit=@old_autocommit;
 -- country (population)
 -- porcentraje (pupulation city/ population country)
 
-select * from city;
 -- EJ72 - MUESTRA UNA LISTA DE LOS DISTRITOS DE ESPAÑA, SU POBLACIÓN, LA POBLACIÓN DEL PAÍS Y EL PORCENTAJE DE POBLACIÓN DEL PAÍS QUE VIVE EN ESE DISTRITO (2 DECIMALES).
 
 -- EJ73 - MUESTRA UNA LISTA DE LOS NOMBRES DE LAS CAPITALES EUROPEAS.
+SELECT  city.Name FROM country JOIN city ON city.id = country.Capital where country.Continent="Europe" order by city.name;
 
 -- EJ74 - ¿CUÁL ES LA CAPITAL DEL MUNDO MÁS POBLADA?
+SELECT  city.Name FROM country JOIN city ON city.id = country.Capital order by city.Population Desc LIMIT 1;
 
 -- EJ75 - MUESTRA UNA LISTA CON EL NOMBRE DE LOS PAÍSES Y LA CANTIDAD DE IDIOMAS QUE SE HABLAN EN DICHO PAÍS.
+select country.name as nombrePais, count(countrylanguage.Language) as idiomasHablados from country join countrylanguage on country.code = countrylanguage.countrycode group by country.name order by idiomasHablados desc;
 
 -- EJ76 - MUESTRA UNA LISTA CON EL NOMBRE DE LOS PAÍSES Y LA CANTIDAD DE IDIOMAS OFICIALES QUE SE HABLAN EN DICHO PAÍS.
+select country.name as nombrePais, count(countrylanguage.Language) as idiomasHablados from country join countrylanguage on country.code = countrylanguage.countrycode where countrylanguage.isofficial="T" group by country.name;
 
 -- EJ77 - MUESTRA UNA LISTA CON EL NOMBRE DE TODOS LOS PAÍSES Y LA CANTIDAD DE CIUDADES DE CADA PAÍS DISPONIBLES EN LA BASE DE DATOS.
+SELECT  country.name, count(city.ID)as NumeroCiudades from country left join city on city.countrycode = country.code group by country.name;
 
 -- EJ78 - MUESTRA EL NOMBRE DE LOS PAÍSES SIN CIUDADES REGISTRADAS.
+
 
 -- EJ79 - MUESTRA UNA LISTA CON EL NOMBRE DE LOS PAÍSES, LOS IDIOMAS HABLADOS Y LA CANTIDAD DE PERSONAS QUE HABLAN CADA IDIOMA EN CADA PAÍS.
 
