@@ -48,11 +48,7 @@ public class Faker {
      * @return Buleano.
      */
     public static boolean buleano() {
-        boolean buleano = true;
-        if(entero(0, 1)== 0){
-            buleano = false;
-        }
-        return buleano;
+        return (entero(0, 1) == 1);
     }
 
     /**

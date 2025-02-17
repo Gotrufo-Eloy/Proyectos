@@ -88,7 +88,7 @@ LIMIT 1;
 
 -- 45. MUESTRA LA DIRECCIÓN DE LAS TIENDAS Y CUÁNTO EN TOTAL HA FACTURADO CADA UNA.
 SELECT adr.address,
-    COUNT(payment.amount)
+    SUM(payment.amount)
 FROM address AS adr
     JOIN staff ON adr.address_id = staff.address_id
     JOIN payment ON staff.staff_id = payment.staff_id
@@ -105,7 +105,7 @@ GROUP BY film.title;
 
 -- 47. ¿CUÁL HA SIDO LA PELÍCULA MÁS RENTABLE?
 SELECT film.title,
-    AVG(payment.amount) AS cantidadPagadaPromedio
+    SUM(payment.amount) 
 FROM film
     JOIN inventory ON film.film_id = inventory.film_id
     JOIN rental ON inventory.inventory_id = rental.inventory_id
