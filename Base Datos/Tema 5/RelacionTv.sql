@@ -11,11 +11,11 @@
 -- 5. Listar todos los espectadores y los programas que han calificado, incluyendo espectadores sin calificaciones.
 
 -- 6. Obtener todas las empresas que han colocado publicidad, junto con los productos publicitados.
-
+SELECT pub.empresa, pub.producto FROM publicidad AS pub WHERE pub.empresa IS NOT NULL AND pub.producto IS NOT NULL; 
 -- 7. Listar todas las emisiones, incluyendo aquellas que aún no tienen programa asignado.
-
+SELECT id FROM emision;
 -- 8. Mostrar todos los programas y, si existen, las opiniones que han recibido.
-
+Select prog.titulo, op.id from programa prog left join opinion as op on prog.id= op.id;
 -- 9. Obtener todos los canales y los programas que transmiten, asegurando que aparezcan los canales sin programas asignados.
 
 -- 10. Listar todas las productoras junto con los programas que han producido, incluyendo aquellas que no tienen programas asignados.
