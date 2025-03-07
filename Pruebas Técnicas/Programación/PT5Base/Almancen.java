@@ -9,7 +9,7 @@ public class Almancen {
     }
 
     public Producto buscarProductoPorCodigo(String codigo){
-        Producto productoBuscado;
+        Producto productoBuscado = null;
         for (int i = 0; i < Productos.size(); i++) {
             if(Productos.get(i).getCodigo().equalsIgnoreCase(codigo)){
                 productoBuscado = Productos.get(i);

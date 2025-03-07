@@ -68,9 +68,12 @@ public class main {
                 String codigoProducto = stringScanner.nextLine();
                 Producto productoBuscado = STEMAlmacenes.buscarProductoPorCodigo(codigoProducto);
                 if (productoBuscado != null) {
-                    
-                } else if () {
-                    System.out.println("Producto no encontrado.");
+                    if (productoBuscado.getCantidad()==0){
+
+                    }else {
+                        
+                    }
+                
                 }else {
                     System.out.println("Producto no encontrado.");
                 }
