@@ -18,7 +18,6 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "PruebasPropias/Java",
-        "Programación/Java/Tema1",
-        "Programación/Java/Tema2"
+        "Pruebas Técnicas/Programación/PT5Base"
     ]
 }

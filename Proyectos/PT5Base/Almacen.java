@@ -1,11 +1,12 @@
-package PT5Base;
+
 import java.util.ArrayList;
 
-public class Almancen {
+public class Almacen {
     int id;
     ArrayList<Producto> Productos;
 
     public Almacen(){
+        this.Productos = new ArrayList<>();
     }
 
     public Producto buscarProductoPorCodigo(String codigo){
@@ -16,6 +17,16 @@ public class Almancen {
             }
         }
         return productoBuscado;
+    }
+
+    public int buscarPosicionProductoPorCodigo(String codigo){
+        int posicionProductoBuscado = -1;
+        for (int i = 0; i < Productos.size(); i++) {
+            if(Productos.get(i).getCodigo().equalsIgnoreCase(codigo)){
+                posicionProductoBuscado = i;
+            }
+        }
+        return posicionProductoBuscado;
     }
 
     public int agregarStockAProducto(String codigo, int cantidadAñadir){
