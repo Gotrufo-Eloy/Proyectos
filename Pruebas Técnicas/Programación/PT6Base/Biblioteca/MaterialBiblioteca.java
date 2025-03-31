@@ -1,6 +1,6 @@
 package Biblioteca;
 
-public class MaterialBiblioteca {
+abstract class MaterialBiblioteca {
     private String titulo;
     private String codigo;
     private String categoria;

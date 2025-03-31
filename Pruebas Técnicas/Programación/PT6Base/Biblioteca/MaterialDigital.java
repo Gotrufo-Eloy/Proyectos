@@ -7,6 +7,7 @@ abstract class MaterialDigital extends MaterialBiblioteca implements AccesoDigit
     public MaterialDigital(String titulo, String codigo, String categoria, String url) {
         super(titulo, codigo, categoria);
         this.url = url;
+        this.usuario = null;
         this.sesionActiva = false;
     }
 

@@ -7,9 +7,7 @@ public class Main {
     public static Scanner intScanner = new Scanner(System.in);
     public static Scanner stringScanner = new Scanner(System.in);
 
-    public static ArrayList<MaterialBiblioteca> materiales = new ArrayList<>();
-    // public static ArrayList<Prestamo> prestamos = new ArrayList<>();
-    // public static ArrayList<Reservable> reservas = new ArrayList<>();
+    public static ArrayList<MaterialBiblioteca> materiales = Inicializacion.crearBiblioteca();
 
     public static void menu() {
         System.out.println("===== SISTEMA DE GESTIÓN DE BIBLIOTECA =====\r\n" + //
@@ -27,7 +25,7 @@ public class Main {
         System.out.println("Ingrese el título del " + tipoMaterial + ": ");
         String titulo = stringScanner.nextLine();
         String codigo = null;
-        while (!codigoExiste(codigo)) {
+        while (codigoNoExiste(codigo)) {
             System.out.println("Ingrese el codigo del " + tipoMaterial + ": ");
             codigo = stringScanner.nextLine();
         }
@@ -41,14 +39,20 @@ public class Main {
         return material;
     }
 
-    public static boolean codigoExiste(String codigo) {
+    public static boolean codigoNoExiste(String codigo) {
         boolean existe = false;
-        for (MaterialBiblioteca material : materiales) {
-            if (material.getCodigo().equalsIgnoreCase(codigo)&&codigo != null) {
-                System.out.println("El código ya existe. Por favor, ingrese otro.");
-                existe = true;
+        if(materiales.size()!=0){
+            for (MaterialBiblioteca material : materiales) {
+                if (material.getCodigo().equalsIgnoreCase(codigo)) {
+                    System.out.println("El código ya existe. Por favor, ingrese otro.");
+                    existe = true;
+                }
             }
         }
+        if (codigo == null || codigo.isEmpty()) {
+            existe = true;
+        }
+
         return existe;
     }
 
@@ -189,7 +193,7 @@ public class Main {
                     String codigo = stringScanner.nextLine();
                     MaterialBiblioteca materialBuscado = null;
                     for (int i = 0; i < materiales.size() && materialBuscado == null; i++) {
-                        if (materiales.get(i).getTitulo().equalsIgnoreCase(codigo)) {
+                        if (materiales.get(i).getCodigo().equalsIgnoreCase(codigo)) {
                             materialBuscado = materiales.get(i);
                         }
                     }
@@ -219,7 +223,7 @@ public class Main {
                     String codigo = stringScanner.nextLine();
                     MaterialBiblioteca materialBuscado = null;
                     for (int i = 0; i < materiales.size() && materialBuscado == null; i++) {
-                        if (materiales.get(i).getTitulo().equalsIgnoreCase(codigo)) {
+                        if (materiales.get(i).getCodigo().equalsIgnoreCase(codigo)) {
                             materialBuscado = materiales.get(i);
                         }
                     }
@@ -252,7 +256,7 @@ public class Main {
                 String codigo = stringScanner.nextLine();
                 MaterialBiblioteca materialBuscado = null;
                 for (int i = 0; i < materiales.size() && materialBuscado == null; i++) {
-                    if (materiales.get(i).getTitulo().equalsIgnoreCase(codigo)) {
+                    if (materiales.get(i).getCodigo().equalsIgnoreCase(codigo)) {
                         materialBuscado = materiales.get(i);
                     }
                 }

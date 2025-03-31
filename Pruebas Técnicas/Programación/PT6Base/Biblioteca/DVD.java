@@ -13,19 +13,13 @@ public class DVD extends MaterialBiblioteca implements Prestamo {
     public void prestar() {
         if (!prestado) {
             prestado = true;
-            System.out.println("DVD " + getTitulo() + " prestado.");
-        } else {
-            System.out.println("El DVD " + getTitulo() + " ya está prestado.");
         }
     }
 
     public void devolver() {
         if (prestado) {
             prestado = false;
-            System.out.println("DVD " + getTitulo() + " devuelto.");
-        } else {
-            System.out.println("El DVD " + getTitulo() + " no está prestado.");
-        }
+        } 
     }
 
     public boolean estaPrestado() {

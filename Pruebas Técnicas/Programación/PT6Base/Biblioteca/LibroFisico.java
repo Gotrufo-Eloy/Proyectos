@@ -1,14 +1,12 @@
 package Biblioteca;
 
 public class LibroFisico extends MaterialBiblioteca implements Prestamo, Reservable {
-    private String codigo;
     private int anioPublicacion;
     private boolean prestado;
     private boolean reservado;
 
     public LibroFisico(String titulo, String codigo, String categoria, int anioPublicacion) {
         super(titulo, codigo, categoria);
-        this.codigo = codigo;
         this.anioPublicacion = anioPublicacion;
         this.prestado = false;
         this.reservado = false;
@@ -21,7 +19,9 @@ public class LibroFisico extends MaterialBiblioteca implements Prestamo, Reserva
     }
 
     public void devolver() {
-
+        if (prestado) {
+            prestado = false;
+        }
     }
 
     public boolean estaPrestado() {
@@ -35,19 +35,11 @@ public class LibroFisico extends MaterialBiblioteca implements Prestamo, Reserva
     }
 
     public void cancelarReserva() {
-        
+        reservado = false;
     }
 
     public boolean estaReservado() {
         return reservado;
-    }
-
-    public String getcodigo() {
-        return codigo;
-    }
-
-    public void setcodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public int getAnioPublicacion() {
@@ -74,15 +66,15 @@ public class LibroFisico extends MaterialBiblioteca implements Prestamo, Reserva
         this.reservado = reservado;
     }
 
+    @Override
     public String toString() {
-        return "LibroFisico{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", codigo='" + codigo + '\'' +
-                ", categoria='" + getCategoria() + '\'' +
-                ", anioPublicacion=" + anioPublicacion +
-                ", prestado=" + prestado +
-                ", reservado=" + reservado +
-                '}';
+        return "=== Libro Físico ===\n" +
+                "Título: " + getTitulo() + "\n" +
+                "Código: " + getCodigo() + "\n" +
+                "Categoría: " + getCategoria() + "\n" +
+                "Año de Publicación: " + anioPublicacion + "\n" +
+                "Estado: " + (prestado ? "Prestado" : "Disponible") + "\n" +
+                "Reservado: " + (reservado ? "Sí" : "No") + "\n";
     }
 
 }

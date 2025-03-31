@@ -1,4 +1,5 @@
 package Biblioteca;
+
 public class RevistaDigital extends MaterialDigital {
     private int edicion;
     private String publicador;
@@ -9,8 +10,8 @@ public class RevistaDigital extends MaterialDigital {
         this.publicador = publicador;
     }
 
-    public boolean sesionActiva(){
-        return true;
+    public boolean sesionActiva() {
+        return getSesionActiva();
     }
 
     public int getEdicion() {
@@ -29,4 +30,14 @@ public class RevistaDigital extends MaterialDigital {
         this.publicador = publicador;
     }
 
+    @Override
+    public String toString() {
+        return "=== Revista Digital ===\n" +
+                "Título: " + getTitulo() + "\n" +
+                "Código: " + getCodigo() + "\n" +
+                "Categoría: " + getCategoria() + "\n" +
+                "Edición: " + edicion + "\n" +
+                "Publicador: " + publicador + "\n" +
+                "URL: " + getUrl() + "\n";
+    }
 }
